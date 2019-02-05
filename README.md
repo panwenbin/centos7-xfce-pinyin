@@ -16,6 +16,13 @@ $ im-chooser
 ```
 选择`使用IBus`
 
+- 自动选中输入法。在/etc/bashrc或者~/.bashrc中加入如下内容，重新登录
+```
+export XMODIFIERS=@im=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+```
+
 - 如果默认面板弄坏了，手动删除当前用户的Xfce配置，然后重启
 ```
 $ rm -r ~/.config/xfce4
